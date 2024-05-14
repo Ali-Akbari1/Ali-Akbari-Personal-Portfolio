@@ -1,19 +1,19 @@
+
+<!--  need to add resume and linked in  --> 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css" />
     <title>Ali Akbari Portfolio</title>
 </head>
 <body>
-    
-   <!-- <div class ="circularPhoto"> --> 
-        <!-- <img src="images/IMG_7349_Original.jpg"/> -->
 
-   <!--  </div> --> 
    <nav id = "desktop-nav">
-    <div class="logo"> Ali Akbari</div>
+    <div class="logo" button class="name" onclick="location.href='https:www.alimakbari.com'">Ali Akbari</button></div>
 
     <div>
         <ul class="nav-links">
@@ -24,20 +24,44 @@
     </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Ali Akbari</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="logo">
+            <button class="name" onclick="location.href='https:www.alimakbari.com'">Ali Akbari</button>
             </div>
-            <div class="menu-links">
-                <li><a href= #about onclick="toggleMenu()">About</a></li>
-                <li><a href= #projects onclick="toggleMenu()">Projects</a></li>
-                <li><a href= #contact onclick="toggleMenu()">Contact</a></li>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <section id="profile">
+        <div class="section__pic-container">
+            <img src="./images/IMG_7348_Original.jpg" alt="Ali Akbari Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Ali Akbari</h1>
+            <p class="section__text__p2">A Computer Science Student</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./images/IMG_7349_Original.jpg')">Download Resume</button>
+
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Information</button>
+            </div>
+            <div id="socials-container">
+                <img src="./images/linkedin-blue-logo-icon.png" alt="My LinkedIn Profile"
+                class="icon" onclick="location.href='https:www.linkedin.com/in/ali-akbari-a2468227b/'">
+
+                <img src="./images/GitHub-logo.png" alt="My Github Profile"
+                class="icon" onclick="location.href='https:www.github.com/Ali-Akbari1'">
             </div>
         </div>
-    </nav>
+      </section>
     <script src="script.js"></script>
 </body>
 </html>
