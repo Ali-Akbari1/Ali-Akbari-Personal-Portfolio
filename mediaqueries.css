@@ -22,11 +22,32 @@
     }
 
     .text-container {
-        font-size: 14px; /* Adjust the font size as desired */
+      text-align: justify;
+      font-size: 14px; /* Adjust this as needed */
+      width: 100%;
+      box-sizing: border-box;
+      overflow-wrap: break-word; /* Ensures long words break and wrap */
+      word-wrap: break-word; /* For legacy support */
+      word-break: break-word; /* Breaks long words */
+      white-space: normal; /* Ensures text wraps */
+      padding: 1rem; /* Add some padding for better readability */
+      margin: 0 auto; /* Center the text container */
+      padding-right: 10rem;
     }
 
     #experience, .experience-details-container{
         margin-top: 2rem;
+    }
+
+    #profile{
+
+      margin-top: -40rem;
+    }
+    #about{
+      margin-top: -40rem;
+    }
+    #projects{
+      margin-top: -50rem;
     }
     /*
     #profile, .section-container{
@@ -34,6 +55,11 @@
 
     }
     */
+
+
+    #contact{
+      margin-top: -150rem;
+    }
 
     .arrow{
         display:none;
@@ -54,62 +80,188 @@
 
 }
 @media screen and (max-width: 600px) {
-    #contact,
-    footer {
-      height: 40vh;
-    }
-    #profile {
-      height: 83vh;
-      margin-bottom: 0;
-    }
-    article {
-      font-size: 1rem;
-    }
-    footer nav {
-      height: fit-content;
-      margin-bottom: 2rem;
-    }
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
-      flex-wrap: wrap;
-    }
-    .contact-info-container {
-      margin: 0;
-    }
-    .contact-info-container p,
-    .nav-links li a {
-      font-size: 1rem;
-    }
-    .experience-sub-title {
-      font-size: 1.25rem;
-    }
-    .logo {
-      font-size: 1.5rem;
-    }
-    .nav-links {
-      flex-direction: column;
-      gap: 0.5rem;
-      text-align: center;
-    }
-    .section__text__p2 {
-      font-size: 1.25rem;
-    }
-    .title {
-      font-size: 2rem;
-    }
-    .text-container {
-      text-align: justify;
-    }
+
+  #about{
+    margin-top: -7rem;
   }
 
 
+  #contact{
+    margin-top: -30rem;
+    height: 40vh;
+  }
 
-@media screen and (max-width: 1200px) {
-    .text-container {
-        font-size: 14px;
-    }
+#profile{
+
+  margin-top: -7rem;
+  font-size: 8px;
+
 }
+
+
+.section_pic-container{
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+
+}
+
+
+.section_pic-container img{
+  object-fit: cover;
+  width: 200px;
+  height: auto;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.section__pic-container {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+    font-size: 0.5rem;
+}
+
+
+.section__text__p2 {
+    text-align: center;
+    font-size: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.section__text__p1{
+
+  text-align: center;
+  font-size: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 7rem;
+
+}
+
+#projects {
+    margin-top: 2rem;
+}
+
+#contact {
+    height: auto;
+}
+
+.logo {
+    font-size: 1rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+
+.title-project{
+  font-size: 2rem !important;
+  text-align: center !important;
+  margin-top: 4rem !important;
+  margin-bottom: 7rem;
+  background-color: transparent !important;
+
+
+}
+
+
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 6rem;
+    border-radius: 2rem;
+}
+
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+.text-container {
+  text-align: justify;
+  font-size: 8px !important; /* Adjust this as needed */
+  width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word; /* Ensures long words break and wrap */
+  word-wrap: break-word; /* For legacy support */
+  word-break: break-word; /* Breaks long words */
+  white-space: normal; /* Ensures text wraps */
+  padding: 1rem; /* Add some padding for better readability */
+  margin: 0 auto; /* Center the text container */
+  margin-top: -3rem;
+}
+
+
+.details-container{
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  text-align: center;
+  font-size: 8px;
+  margin-top: -7rem;
+
+}
+
+.contact-info-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+  font-size: 7px;
+
+}
+
+.email-icon{
+
+  height: 2rem;
+
+}
+
+footer{
+  height: 30vh;
+  font-size: 10px;
+  margin-left: 1rem;
+
+}
+
+footer p{
+  text-align: center;
+
+}
+
+.nav-links{
+  font-size: 18px;
+}
+
+
+}
+
+
 
 @media screen and (max-width: 800px) {
     .text-container {
@@ -117,11 +269,6 @@
     }
 }
 
-@media screen and (max-width: 600px) {
-    .text-container {
-        font-size: 8px;
-    }
-}
 
 @media screen and (max-width: 400px) {
     .text-container {

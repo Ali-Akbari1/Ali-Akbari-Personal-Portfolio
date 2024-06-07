@@ -238,6 +238,11 @@ opacity: 0;
     text-align: center;
 }
 
+.title-project{
+  font-size: 3rem;
+  text-align: center;
+}
+
 #socials-container{
     display: flex;
     justify-content: center;
@@ -442,7 +447,7 @@ opacity: 0;
     position: relative;
     gap: 5rem;
     min-height:85vh;
-    margin-top: 21rem;
+    margin-top: 30rem;
   }
 
   #contact{
@@ -461,7 +466,7 @@ opacity: 0;
     border-radius: 2rem;
     border: rgb(53,53,53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-    background: (250,250,250);
+    background: rgb(250,250,250);
     margin: 2rem auto;
     padding: 0.5;
 
@@ -490,6 +495,10 @@ opacity: 0;
 
     height: 3rem;
 
+}
+
+.linkedin-icon{
+  height: 3rem;
 }
 
 footer{
